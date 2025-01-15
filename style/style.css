@@ -7,7 +7,7 @@
   font-weight: 700;
   font-style: normal;
   font-variation-settings:"width" 100;
-}
+} 
 /* shard style */
 .secondary-bg{
     background-color:#FFF8F3;
@@ -171,3 +171,45 @@ input[type="text"],footer input[type="email"],footer textarea{
     margin-bottom: 24px;
     border: none;
 }
+
+/* responsive media query */
+.hide{
+    display: none;
+}
+/* small device */
+@media screen and (max-width:576px) {
+    .skill{
+        padding: 20px;
+    }
+    .skills-container
+   {
+        flex-direction: column;
+        padding: 20px;
+       
+    }
+    .resume-container{
+        flex-direction: column;
+
+    }
+    footer{
+        flex-direction: column;
+        padding: 20px;
+
+    }
+    .footer-column{
+        width: 100%;
+    }
+    input[type="text"],footer input[type="email"],footer textarea{
+       width: calc(100% - 40px); 
+}
+
+.about{
+    
+    padding: 20px;
+}
+.about-items{
+    flex-direction: column;
+}
+
+}
+    
